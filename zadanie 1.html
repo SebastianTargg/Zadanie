@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>1 - Instrukcja warunkowa w JavaScript</title>
+	<link href="arkusz-cwiczenia.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<label>
+		Podaj numer dnia tygodnia: <input type="number" id="dzien">
+	</label>
+	
+	<input type="submit" value="Zobacz nazwę dnia" onclick="getDayName()">
+
+	<div id="wynik"></div>
+	
+	<script>
+	
+		function getDayName()
+		{
+		var dzien = document.getElementById("dzien").value;
+		var ktory = "";
+		document.getElementById("wynik").style.color = "red";
+
+		
+		if (dzien == 1){
+			ktory = "dzien tygodnia to poniedzialek";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+		if (dzien == 2){
+			ktory = "dzien tygodnia to wtorek";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+		if (dzien == 3){
+			ktory = "dzien tygodnia to środa";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+		
+		if (dzien == 4){
+			ktory = "dzien tygodnia to czwartek";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+			
+		if (dzien == 5){
+			ktory = "dzien tygodnia to piątek";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+			
+		if (dzien == 6){
+			ktory = "dzien tygodnia to sobota";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+			
+		if (dzien == 7){
+			ktory = "dzien tygodnia to niedziela";
+			document.getElementById("wynik").innerHTML = ktory;
+			}
+			
+		
+		
+		}
+		
+
+
+	</script>
+
+</body>
+</html>
